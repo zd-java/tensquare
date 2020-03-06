@@ -1,0 +1,16 @@
+server: 
+  port: 9002
+spring: 
+  application:  
+    name: tensquare-recruit #指定服务名
+  datasource:  
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.3.26:3306/tensquare_recruit?characterEncoding=UTF8&serverTimezone=UTC
+    username: root
+    password: zd
+  jpa: 
+    database: MySQL
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true #格式化sql
